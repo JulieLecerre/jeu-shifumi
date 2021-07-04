@@ -158,16 +158,6 @@ body {
 	margin-left: 600px; 
 }
 
-.boutonJaune .boutonBleu {
-	display: flex;
-	flex-direction: column;
-}
-
-.boutonRouge {
-	display: flex;
-	flex-direction: column;
-}
-
 .Pierre {
 	width: 70px;
 	height: 70px;
