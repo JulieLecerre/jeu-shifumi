@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="jeu.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed">
+
+  <title> Rock Paper Scissors Game </title>
+</head>
+<body>
+
+<div class="mainBloc">
+	<div class="encadreGame">
+		<span class="titreRock"> ROCK </span> <br>
+		<span class="titrePaper"> PAPER </span> <br>
+		<span class="titreScissors"> SCISSORS </span> <br>
+
+		<div class="carréScore">
+			<span class="texteScore"> SCORE </span> <br>
+			<span class="chiffreScore"></span>
+		</div>
+	</div>
+
+	<div class="boutonCentral">
+		<div class="boutonRouge">
+			<img class="Pierre" src="images/icon-rock.svg">
+		</div>
+		<div class="boutonJaune">
+			<img class="Ciseaux"  src="images/icon-scissors.svg">
+		</div>
+		<div class="boutonBleu">
+			<img class="Feuille" src="images/icon-paper.svg">
+		</div>
+	</div> 
+		
+	<div>
+		<img class="imageTriangle" src="images/bg-triangle.svg">
+	</div>
+
+
+	<div class="boutonRules">
+		<span class="titreRules" onClick="boutonRules"> RULES </span>
+	</div>
+</div>
+
+<div class="popupRules">
+		<span class="boutonClose" onClick="boutonClose">X</span>
+		<span class="titrePopup"> RULES </span>
+		<img class="contenuPopup" src="images/image-rules.svg">
+</div>
+
+<div class="blocChoixJoueurs">
+
+
+<div class="choixJoueur">
+	<span class="choixTitre">Votre choix</span>
+	<div class="resultatPierre resultatJoueurPierre"></div>
+	<div class="resultatFeuille resultatJoueurFeuille"></div>
+	<div class="resultatCiseaux resultatJoueurCiseaux"></div>
+</div>
+
+<div class="choixPc">
+	<span class="choixTitre">Choix de l'ordinateur</span>
+	<div class="resultatPierre resultatPcPierre"></div>
+	<div class="resultatFeuille resultatPcFeuille"></div>
+	<div class="resultatCiseaux resultatPcCiseaux"></div>
+</div>
+
+<div class="texteResultat">
+</div>
+
+<div class="boutonRejouer">
+	<span class="texteRejouer"> Rejouer </span>
+</div>
+
+
+</div> 
+
+<script src="jeu.js"></script>
+</body>
+</html>

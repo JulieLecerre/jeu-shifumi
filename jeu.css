@@ -1,0 +1,378 @@
+body {
+	background-color: #192444;
+	margin-top: 0px;
+}
+
+.encadreGame {
+	height: 150px;
+	width: 630px;
+	border:solid;
+	border-color: grey;
+	border-width: medium;
+	border-radius: 30px 30px 30px 30px;
+	display: block;
+	margin-left: auto;
+    margin-right: auto
+}
+
+.titreRock {
+	color: white;
+	font-family: Barlow Semi Condensed;
+	font-size: 40px;
+	font-weight: bold;
+	position: relative;
+	top: 15px;
+	left: 25px;
+}
+
+.titrePaper {
+	color: white;
+	font-family: Barlow Semi Condensed;
+	font-size: 40px;
+	font-weight: bold;
+	position: relative;
+	top: 0px; 
+	left: 25px;
+}
+
+.titreScissors {
+	color: white;
+	font-family: Barlow Semi Condensed;
+	font-size: 40px;
+	font-weight: bold;
+	position: relative;
+	top: -14px;
+	left: 25px;
+}
+
+.carréScore {
+	width: 150px;
+	height: 115px;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+	margin-top: -125px;
+	margin-left: 458px;
+}
+
+.texteScore {
+	color: #404891;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Barlow Semi Condensed;
+	letter-spacing: 2px;
+	position: relative;
+	top:14px;
+	left: 40px;
+}
+
+.chiffreScore {
+	color: #5b5a6c;
+	font-size: 60px;
+	font-weight: bold;
+	font-family: Barlow Semi Condensed;
+	position: relative;
+	top: 10px;
+	left: 50px;
+}
+
+.boutonRules {
+	height: 40px;
+	width: 120px;
+	border:solid;
+	border-color: grey;
+	border-width: medium;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	border-radius: 10px 10px 10px 10px;	
+	cursor: pointer;
+}
+
+.boutonRules:hover {
+	background-color: white;
+}
+
+.boutonRules:hover .titreRules{
+	color:#192444;
+}
+
+.titreRules {
+	color: #fbffff;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Barlow Semi Condensed;
+	letter-spacing: 2px;
+	position: relative;
+	top: 7px;
+	left: 30px;
+}
+
+.boutonRules .titreRules:hover  {
+	color:#192444;
+}
+
+.boutonRouge {
+    width: 128px;
+    height: 128px;
+    border-radius: 70px;
+    background: white;
+	border-color: white;
+	border: 15px solid #df405e;
+	box-shadow: inset 0.3em 0.3em #babfd5, 0.3em 0.3em #9f1536;
+	position: relative;
+	left: 673px;
+	top: 335px;
+	cursor: pointer;
+}
+
+.boutonJaune {
+    width: 128px;
+    height: 128px;
+    border-radius: 70px;
+    background: white;
+	border-color: white;
+	border: 15px solid #eba624;
+	box-shadow: inset 0.3em 0.3em #babfd5, 0.3em 0.3em #c56e1f;
+	position: relative;
+	left: 790px;
+	top: -30px;
+	cursor: pointer;
+}
+
+.boutonBleu {
+    width: 128px;
+    height: 128px;
+    border-radius: 70px;
+    background: white;
+	border-color: white;
+	border: 15px solid #5671f6;
+	box-shadow: inset 0.3em 0.3em #babfd5, 0.3em 0.3em #2945c3;
+	position: relative;
+	left: 550px;
+	top: -190px;
+	cursor: pointer;
+}
+
+.imageTriangle {
+	margin-top: -270px;
+	margin-left: 600px; 
+}
+
+.boutonJaune .boutonBleu {
+	display: flex;
+	flex-direction: column;
+}
+
+.boutonRouge {
+	display: flex;
+	flex-direction: column;
+}
+
+.Pierre {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	left: 29px;
+	top: 31px;
+}
+
+.Ciseaux {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	left: 29px;
+	top: 31px;
+}
+
+.Feuille {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	left: 29px;
+	top: 31px;
+}
+
+
+.boutonClose {
+	color: grey;
+	font-size: 24px;
+	position: relative;
+	top: -210px;
+	left: 410px;
+	cursor: pointer;
+}
+
+
+.titrePopup {
+	color: #3d405f;
+	font-size: 28px;
+	font-weight: bold;
+	font-family: Barlow Semi Condensed;
+	position: relative;
+	top: -210px;
+	left: 30px;
+}
+
+.popupRules {
+	border:1px solid white;
+	border-radius: 10px;
+	width: 450px;
+	height:390px;
+	background-color: white;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+
+.contenuPopup {
+	position: relative;
+	top:80px;
+	left: -25px;
+}
+
+.resultat {
+	color:white;
+	font-size: 35px;
+}
+
+.blocChoixJoueurs {
+	width: 500px;
+	height: 300px;
+	margin: auto;
+	margin-top: 30px;
+	border: 5px solid #df405e;
+	border-radius: 20px;
+	border-color: white;
+	padding: 40px;
+	display: none;
+}
+
+.resultatPierre {
+	background-color: white;
+	background-image:url("images/icon-rock.svg") ;
+	background-size: 100px 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 128px;
+    height: 128px;
+    border-radius: 70px;
+	border-color: white;
+	border: 15px solid #df405e;
+	box-shadow: inset 0.3em 0.3em #babfd5, 0.3em 0.3em #9f1536;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.resultatFeuille {
+	background-color: white;
+	background-image:url("images/icon-paper.svg") ;
+	background-size: 100px 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+    width: 128px;
+    height: 128px;
+    border-radius: 70px;
+	border-color: white;
+	border: 15px solid #5671f6;
+	box-shadow: inset 0.3em 0.3em #babfd5, 0.3em 0.3em #2945c3;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.resultatCiseaux {
+	background-color: white;
+	background-image:url("images/icon-scissors.svg") ;
+	background-size: 100px 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+    width: 128px;
+    height: 128px;
+    border-radius: 70px;
+	border-color: white;
+	border: 15px solid #eba624;
+	box-shadow: inset 0.3em 0.3em #babfd5, 0.3em 0.3em #c56e1f;
+	cursor: pointer;
+	margin-top: 10px;
+}
+ 
+.resultatJoueurPierre { display: none; }
+.resultatJoueurFeuille { display: None; }
+.resultatJoueurCiseaux { display: None; }
+.resultatPcPierre{ display: none; }
+.resultatPcFeuille { display: None; }
+.resultatPcCiseaux { display: None; }
+
+
+.choixJoueur{
+	text-align: center;
+	width: 158px;
+	height: 200px;
+}
+
+
+
+.choixPc {
+	position: relative;
+	left: 340px;
+	top: -200px;
+	text-align: center;
+	width: 158px;
+	height: 200px;
+}
+
+.choixTitre {
+	font-family: Barlow Semi Condensed;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.texteResultat {
+	font-family: Barlow Semi Condensed;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	top: -190px;
+	text-align: center;
+}
+
+.boutonRejouer {
+	height: 40px;
+	width: 120px;
+	border:solid;
+	border-color: grey;
+	border-width: medium;
+	margin-bottom: 35px;
+	border-radius: 10px 10px 10px 10px;	
+	cursor: pointer;
+	position: relative;
+	top: -150px;
+	margin: auto;
+}
+
+.boutonRejouer:hover {
+	background-color: white;
+}
+
+.boutonRejouer:hover .texteRejouer{
+	color:#192444;
+}
+
+.texteRejouer {
+	color: #fbffff;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Barlow Semi Condensed;
+	letter-spacing: 2px;
+	position: relative;
+	top: 7px;
+	left: 25px;
+}
+
+.boutonRejouer .texteRejouer:hover  {
+	color:#192444;
+}
+
